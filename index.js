@@ -1,3 +1,4 @@
+
 const Discord = require("discord.js")
 const dotenv = require("dotenv")
 const { REST } = require("@discordjs/rest")
@@ -10,8 +11,8 @@ const TOKEN = process.env.TOKEN
 
 const LOAD_SLASH = process.argv[2] == "load"
 
-const CLIENT_ID = "924846888929337354"
-const GUILD_ID = "924832445050781766"
+const CLIENT_ID = "974491300424454184"
+const GUILD_ID = "739214547239436328"
 
 const client = new Discord.Client({
     intents: [
@@ -69,3 +70,4 @@ else {
         handleCommand()
     })
     client.login(TOKEN)
+}
